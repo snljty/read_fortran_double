@@ -1,5 +1,9 @@
 /*  This file uses fortran function read_double_from_string_  */
 
+# ifdef __cplusplus
+extern "C" {
+# endif
+
 # include <stdio.h>
 # include <string.h>
 
@@ -31,4 +35,8 @@ int main()
 
     return 0;
 }
+
+# ifdef __cplusplus
+}
+# endif
 

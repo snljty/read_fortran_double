@@ -9,9 +9,7 @@ ARCH   = ar
 all: test.exe
 
 test.exe: test.o static_lib
-	# you can link with Fortran compiler.
 	$(FLINKER) -o $@ $< -L . -l read_double
-	# or you can link with C compiler, just add a "-l gfortran" argument.
 	# $(CLINKER) -o $@ $< -L . -l read_double -l gfortran
 
 test.o: test.c
